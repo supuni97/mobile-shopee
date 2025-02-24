@@ -43,6 +43,46 @@
           <a href="#" class="px-3 border-right text-dark">Wishlist (0)</a>
         </div>
       </div>
+      <!--primary navigation-->
+      <nav class="navbar navbar-expand-lg" style="background: #00a5c4;">
+        <a class="navbar-brand" href="#" style="color: white;">Mobile Shopee</a>
+        <button class="navbar-toggler bg-white text-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active" >
+              <a style="color: white;" class="nav-link" href="#" 
+                >On Sale</a
+              >
+            </li>
+            <li class="nav-item">
+              <a style="color: rgb(238, 252, 255);" class="nav-link" href="#">Category<i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a style="color: white;" class="nav-link" href="#">Products<i class="fas fa-chevron-down"></i></a>
+            </li>  <li class="nav-item">
+              <a style="color: white;" class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: white;" class="nav-link" href="#">Coming Soon</a>
+            </li>
+            </li>
+           
+          </ul>
+     <form action="#" class="font-size-14">
+  <a href="#" class="d-inline-flex align-items-center py-0 px-0 rounded-pill bg-dark">
+    <span class="font-size-14 text-white ml-2"><i class="fas fa-shopping-cart"></i></span>
+    <span class="px-3 py-1 ml-2 rounded-pill text-dark bg-light">0</span>
+  </a>
+</form>
+
+                  
+          
+        </div>
+      </nav>
     </header>
     <!--end header-->
 
@@ -69,5 +109,13 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.querySelectorAll(".navbar-nav .nav-item").forEach(item => {
+        item.addEventListener("click", function() {
+          document.querySelector(".nav-item.active")?.classList.remove("active");
+          this.classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>

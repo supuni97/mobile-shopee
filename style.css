@@ -23,4 +23,12 @@ button:focus {
   font-size: 20px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.navbar-nav .nav-item .nav-link {
+  color: rgb(238, 252, 255);
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: white;
+  font-weight: 500;
+}
