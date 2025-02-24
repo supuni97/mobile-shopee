@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Sass template*/
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@300&display=swap");
 /*global classes*/
@@ -23,12 +24,51 @@ button:focus {
   font-size: 20px;
 }
 
-.navbar-nav .nav-item .nav-link {
-  color: rgb(238, 252, 255);
+/*top sales template*/
+#top-sale {
+  /* ✅ Position navigation arrows on left & right */
+  /* ✅ Style for navigation buttons */
+  /* ✅ Position previous button on the left */
+  /* ✅ Position next button on the right */
+  /* ✅ Change color on hover */
+}
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevents blocking item clicks */
+}
+#top-sale .owl-carousel .owl-nav button {
+  background: none !important; /* Removes default background */
+  border: none !important;
+  font-size: 20px;
+  color: #007bff; /* Change to preferred color */
+  cursor: pointer;
+  pointer-events: auto; /* Makes buttons clickable */
   transition: color 0.3s ease;
 }
-
-.navbar-nav .nav-item.active .nav-link {
-  color: white;
-  font-weight: 500;
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: -40px;
+  position: absolute;
 }
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: -40px;
+  position: absolute;
+}
+#top-sale .owl-carousel .owl-nav button:hover {
+  color: #0056b3; /* Slightly darker on hover */
+}
+
+/*# sourceMappingURL=style.css.map */
