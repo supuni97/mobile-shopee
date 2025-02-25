@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Sass template*/
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@300&display=swap");
 /*global classes*/
@@ -25,13 +24,6 @@ button:focus {
 }
 
 /*top sales template*/
-#top-sale {
-  /* ✅ Position navigation arrows on left & right */
-  /* ✅ Style for navigation buttons */
-  /* ✅ Position previous button on the left */
-  /* ✅ Position next button on the right */
-  /* ✅ Change color on hover */
-}
 #top-sale .owl-carousel .item .product a {
   overflow: hidden;
 }
@@ -69,6 +61,11 @@ button:focus {
 }
 #top-sale .owl-carousel .owl-nav button:hover {
   color: #0056b3; /* Slightly darker on hover */
+}
+
+#special-price .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

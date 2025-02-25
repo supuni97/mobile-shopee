@@ -13,7 +13,6 @@
     transform: scale(1.1);
   }
 
-  /* ✅ Position navigation arrows on left & right */
   .owl-carousel .owl-nav {
     position: absolute;
     top: 50%;
@@ -24,7 +23,6 @@
     pointer-events: none; /* Prevents blocking item clicks */
   }
 
-  /* ✅ Style for navigation buttons */
   .owl-carousel .owl-nav button {
     background: none !important; /* Removes default background */
     border: none !important;
@@ -35,19 +33,16 @@
     transition: color 0.3s ease;
   }
 
-  /* ✅ Position previous button on the left */
   .owl-carousel .owl-nav button.owl-prev {
     left: -40px;
     position: absolute;
   }
 
-  /* ✅ Position next button on the right */
   .owl-carousel .owl-nav button.owl-next {
     right: -40px;
     position: absolute;
   }
 
-  /* ✅ Change color on hover */
   .owl-carousel .owl-nav button:hover {
     color: #0056b3; /* Slightly darker on hover */
   }

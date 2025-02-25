@@ -12,7 +12,7 @@ $(document).ready(function () {
     navText: [
       "<i class='fas fa-chevron-left'></i>",
       "<i class='fas fa-chevron-right'></i>",
-    ], // ✅ Custom FontAwesome icons
+    ],
     dots: false,
     autoplay: true,
     autoplayTimeout: 3000,
@@ -22,5 +22,20 @@ $(document).ready(function () {
       600: { items: 3 },
       1000: { items: 5 },
     },
+  });
+
+  //filter
+  var $grid = $(".grid").isotope({
+    itemSelector: ".grid-item",
+    layoutMode: "fitRows",
+  });
+
+  $("#filters").on("click", "button", function () {
+    var filterValue = $(this).attr("data-filter");
+    $grid.isotope({ filter: filterValue });
+
+    // ✅ Add active class to clicked button
+    $("#filters button").removeClass("is-checked");
+    $(this).addClass("is-checked");
   });
 });
