@@ -39,3 +39,23 @@ $(document).ready(function () {
     $(this).addClass("is-checked");
   });
 });
+
+//new phones owl carousel
+$("#new-phones .owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true, // ✅ Enables Next/Prev buttons
+  navText: [
+    "<i class='fas fa-chevron-left'></i>",
+    "<i class='fas fa-chevron-right'></i>",
+  ],
+  dots: false,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: { items: 1 },
+    600: { items: 3 },
+    1000: { items: 5 },
+  },
+});
