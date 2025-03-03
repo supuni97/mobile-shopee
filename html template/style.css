@@ -1,0 +1,109 @@
+/*Sass template*/
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@300&display=swap");
+/*global classes*/
+button,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/*top sales template*/
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevents blocking item clicks */
+}
+#top-sale .owl-carousel .owl-nav button {
+  background: none !important; /* Removes default background */
+  border: none !important;
+  font-size: 20px;
+  color: #007bff; /* Change to preferred color */
+  cursor: pointer;
+  pointer-events: auto; /* Makes buttons clickable */
+  transition: color 0.3s ease;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: -40px;
+  position: absolute;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: -40px;
+  position: absolute;
+}
+#top-sale .owl-carousel .owl-nav button:hover {
+  color: #0056b3; /* Slightly darker on hover */
+}
+
+#special-price .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+}
+
+/*new phone template*/
+#new-phones .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#new-phones .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#new-phones .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#new-phones .owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevents blocking item clicks */
+}
+#new-phones .owl-carousel .owl-nav button {
+  background: none !important;
+  border: none !important;
+  font-size: 20px;
+  color: #007bff; /* Change to preferred color */
+  cursor: pointer;
+  pointer-events: auto; /* Makes buttons clickable */
+  transition: color 0.3s ease;
+}
+#new-phones .owl-carousel .owl-nav button.owl-prev {
+  left: -40px;
+  position: absolute;
+}
+#new-phones .owl-carousel .owl-nav button.owl-next {
+  right: -40px;
+  position: absolute;
+}
+#new-phones .owl-carousel .owl-nav button:hover {
+  color: #0056b3; /* Slightly darker on hover */
+}
